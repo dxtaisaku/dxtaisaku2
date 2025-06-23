@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Safariで開く</title>
+  <script>
+    // iOSのSafariで強制的に開くよう試みる
+    window.onload = function () {
+      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const isInStandaloneMode = ('standalone' in window.navigator) && window.navigator.standalone;
+
+      if (isIOS && !isInStandaloneMode) {
+        // Safariなら自動で遷移
+        window.location.href = "https://example.com/login"; // ←オフィスステーションのURLに変更
+      } else {
+        // Androidやその他環境ではそのまま表示
+        document.body.innerHTML = "<p>Safariでこのページを開いてください。</p>";
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>読み込み中です。自動でSafariが開かない場合は、<a href="https://example.com/login">こちらをタップ</a>してください。</p>
+</body>
+</html>
