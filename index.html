@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>職員アプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #f4f8f4;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      padding: 20px;
+      text-align: center;
     }
 
-    .button-container {
-      text-align: center;
+    .label {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 12px;
     }
 
     .app-link {
@@ -28,6 +34,7 @@
       text-decoration: none;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       transition: background-color 0.3s, transform 0.2s;
+      margin-bottom: 24px;
     }
 
     .app-link:hover {
@@ -35,23 +42,31 @@
       transform: translateY(-2px);
     }
 
-    .app-link:active {
-      transform: translateY(0);
+    .instructions {
+      background-color: #e6f9ef;
+      color: #1d774d;
+      border: 1px solid #b3e6cf;
+      padding: 16px;
+      border-radius: 10px;
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
-    .label {
-      margin-bottom: 12px;
+    .emoji {
       font-size: 20px;
-      color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <div class="label">職員向けアプリはこちら</div>
-    <a class="app-link" href="https://sharev3.click.dev/share-app/62b2893a-e259-4159-84ec-ea92ca352b10?locale=ja" target="_blank" rel="noopener noreferrer">
-      アプリを開く
-    </a>
+  <div class="label">職員向けアプリはこちら</div>
+  <a class="app-link" href="https://sharev3.click.dev/share-app/62b2893a-e259-4159-84ec-ea92ca352b10?locale=ja" target="_blank" rel="noopener noreferrer">
+    アプリを開く
+  </a>
+  <div class="instructions">
+    <div class="emoji">📲 ホーム画面に追加する方法</div>
+    <p>iPhoneの場合：<br>Safariでこのページを開き、下部の共有ボタンから「ホーム画面に追加」を選択</p>
+    <p>Androidの場合：<br>Chromeでこのページを開き、右上のメニュー（⋮）から「ホーム画面に追加」を選択</p>
   </div>
 </body>
 </html>
