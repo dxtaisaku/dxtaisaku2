@@ -3,8 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>職員アプリ</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .app-link {
+      display: inline-block;
+      background-color: #2AD584;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .app-link:hover {
+      background-color: #25bd75;
+      transform: translateY(-2px);
+    }
+
+    .app-link:active {
+      transform: translateY(0);
+    }
+
+    .label {
+      margin-bottom: 12px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <p><a href="https://www.example.com">"職員アプリ"</a></p>
+  <div class="button-container">
+    <div class="label">職員向けアプリはこちら</div>
+    <a class="app-link" href="https://sharev3.click.dev/share-app/62b2893a-e259-4159-84ec-ea92ca352b10?locale=ja" target="_blank" rel="noopener noreferrer">
+      アプリを開く
+    </a>
+  </div>
 </body>
 </html>
